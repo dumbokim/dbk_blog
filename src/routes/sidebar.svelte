@@ -4,8 +4,8 @@
 
 <aside class="absolute w-40 h-full bg-emerald-200 border-r-2 shadow-lg" class:open>
     <nav class="p-12 text-xl">
-        <a class="block text-white hover:text-emerald-600" href="#about">About</a>
-        <a class="block text-white hover:text-emerald-600" href="#contact">Contact</a>
+        <a class="block text-white hover:text-emerald-600" href="/">Home</a>
+        <a class="block text-white hover:text-emerald-600" href="/post/flutter">Flutter</a>
     </nav>
 </aside>
 
