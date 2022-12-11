@@ -3,9 +3,14 @@
     export let date
 </script>
 <article>
-    <h1>{title}</h1>
+    <div class="border-b-2 mr-14 pb-2">
+    <h1 class="text-4xl">{title}</h1>
 
-    <p>Published: {date}</p>
+    <p class="pt-4">Published: {date}</p>
+    </div>
 
-    <slot />
+    <div class="pt-16">
+        <slot/>
+    </div>
+
 </article>
