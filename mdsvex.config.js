@@ -4,15 +4,16 @@ const config = defineConfig({
 	extensions: ['.svelte.md', '.md', '.svx'],
 
 	smartypants: {
-		dashes: 'oldschool'
+		dashes: 'oldschool',
+		backticks: true,
 	},
 
 	layout: {
 		post: 'src/routes/post/post.svelte'
 	},
 
-	remarkPlugins: [],
-	rehypePlugins: []
+	// remarkPlugins: [],
+	// rehypePlugins: []
 });
 
 export default config;

@@ -26,8 +26,7 @@
     }
 
     #content {
-        padding-top: 3rem;
-        padding-left: 3rem;
+        padding: 3rem;
         flex: 1;
     }
 </style>
