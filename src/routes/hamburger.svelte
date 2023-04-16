@@ -1,12 +1,18 @@
 <script>
     export let open = false
+    import {clickOutside} from '../utils/clickOutside.ts';
 </script>
 
-<button class="text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none" class:open on:click={() => open = !open}>
+<button class="text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none"
+        class:open
+        on:click={() => open = !open}
+        use:clickOutside
+        on:click_outside={() => open = false}
+>
     <svg width=32 height=24>
-        <line class="text-white" id="top" x1=0 y1=2 x2=32 y2=2 />
-        <line class="text-white" id="middle" x1=0 y1=12 x2=24 y2=12 />
-        <line class="text-white" id="bottom" x1=0 y1=22 x2=32 y2=22 />
+        <line class="text-gray-800" id="top" x1=0 y1=2 x2=32 y2=2/>
+        <line class="text-gray-800" id="middle" x1=0 y1=12 x2=24 y2=12/>
+        <line class="text-gray-800" id="bottom" x1=0 y1=22 x2=32 y2=22/>
     </svg>
 </button>
 
