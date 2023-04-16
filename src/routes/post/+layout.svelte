@@ -3,7 +3,7 @@
 </script>
 
 <main id="main">
-    <p class="mb-2">{$page.url.pathname}</p>
+<!--    <p class="mb-2">{$page.url.pathname}</p>-->
     <slot />
 </main>
 
